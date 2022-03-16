@@ -1,14 +1,25 @@
 import * as React from 'react';
 import {AppBar, Button, Toolbar, Typography} from "@mui/material";
-import logo from "./public/logo.png"
+import { makeStyles } from '@mui/styles';
+import logo from "../../static/img/logo.png"
+
+const useStyles = makeStyles({
+    toolbar:{
+        backgroundColor: '#000000'
+    }
+})
+
 export const Navbar = () => {
+    const classes = useStyles();
+    console.log(classes)
     return (
         <AppBar>
-            <Toolbar>
+            <Toolbar className={classes.toolbar}>
                 <Typography>
-                    <img src="" alt="" />
+                    <img src={logo} alt="Codeflix" />
                 </Typography>
-                <Button />
+                <Button color="inherit" >Login</Button>
+
             </Toolbar>
         </AppBar>
     );
