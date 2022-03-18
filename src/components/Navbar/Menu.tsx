@@ -42,17 +42,6 @@ export const Menu = () => {
                 transformOrigin={{vertical: 'top', horizontal:'center'}}
                 getContentAnchorEl={null}
             >
-                {
-                    listRoutes.map(
-                        (routeName, key) => {
-                            const route = menuRoutes.find(route => route.name === routeName) as MyRouteProps;
-                            return (
-                                <MenuItem key={key} component={Link} to={route.path as string} onClick={handleClose}>
-                                    {route.label}
-                                </MenuItem>
-                            )
-                        })
-                }
                 <MenuItem onClick={handleClose}>
                     Categorias
                 </MenuItem>
