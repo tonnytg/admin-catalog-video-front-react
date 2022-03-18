@@ -11,8 +11,8 @@ const AppRouter = () => {
                         <Route
                             key={key}
                             path={route.path}
-                            element={route.element}
-                            index={route.index === true}
+                            component={route.component}
+                            exact={route.exact === true}
                         />
                     )
                 )
