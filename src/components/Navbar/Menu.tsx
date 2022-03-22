@@ -8,6 +8,8 @@ import {randomInt} from "crypto";
 const listRoutes = [
     'dashboard',
     'categories.list',
+    'categories.create',
+    'categories.edit',
 ];
 const menuRoutes = routes.filter(route => listRoutes.includes(route.name));
 
