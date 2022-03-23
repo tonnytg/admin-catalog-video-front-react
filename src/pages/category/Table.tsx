@@ -1,12 +1,12 @@
 import * as React from 'react';
 import MUIDataTable, {MUIDataTableColumn} from "mui-datatables";
 import {useEffect, useState} from "react";
-import { httpVideo } from "../../utils/http"
-import {Chip, Paper} from "@material-ui/core";
+import {Chip} from "@material-ui/core";
 import Avatar from '@material-ui/core/Avatar';
 import FaceIcon from '@material-ui/icons/Face';
 import format from "date-fns/format";
 import parseISO from "date-fns/parseISO"
+import categoryHttp from "../../utils/http/category-http";
 
 const columnsDefinitions: MUIDataTableColumn[] = [
     {
@@ -61,17 +61,31 @@ const data = [
     { name: "teste3", is_active: true, create_at: "2019-12-12", description: "teste desc"},
 ]
 
+interface Category {
+    id: string;
+    name: string;
+    is_active: boolean;
+    create_at: dateFns;
+    picture: string;
+    description: string;
+}
+
 export const Table = () => {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<Category[]>([]);
 
     // recebe dois parametros, o que eu vou fazer e o segundo
     // é as dependencias.
     // equivale ao componentDidMount()
     useEffect(() => {
-        httpVideo.get('categories').then(
-            (response:any) => setData(response.data)
-        )
+
+        categoryHttp
+            .list<{data: Category[]}>()
+            .then(({data}) => setData(data as any));
+
+        // httpVideo.get('categories').then(
+        //     (response:any) => setData(response.data)
+        // )
     }, [])
 
     return (
