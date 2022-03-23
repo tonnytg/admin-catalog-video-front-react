@@ -2,6 +2,7 @@
 *.log
 *.logs
 *.key
+.env
 node_modules
 .history/
 node_modules
