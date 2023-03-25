@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Admin Catalog Video Front React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto que utiliza o framework React para construir a interface de usuário de um sistema de administração de catálogo de vídeos. O projeto se conecta a uma API RESTful para obter e atualizar as informações do catálogo de vídeos.
 
-## Available Scripts
+## Tecnologias Utilizadas
+- React
+- Redux
+- React Router
+- Bootstrap
+- Axios
 
-In the project directory, you can run:
+## Instalação
+1. Clone o repositório para sua máquina local.
+2. Certifique-se de ter o Node.js instalado em sua máquina.
+3. Execute o comando `npm install` para instalar todas as dependências do projeto.
 
-### `npm start`
+## Uso
+Para utilizar a interface de usuário, execute o comando `npm start`. A partir daí, você poderá acessar a interface no seu navegador, através do endereço http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## API RESTful
+O sistema de administração de catálogo de vídeos se conecta a uma API RESTful para obter e atualizar as informações do catálogo de vídeos. Certifique-se de que a API esteja em execução antes de utilizar a interface de usuário.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Contribuição
+Contribuições são sempre bem-vindas! Se você deseja contribuir para este projeto, por favor siga os seguintes passos:
+1. Crie um fork do projeto.
+2. Clone o seu fork para sua máquina local.
+3. Crie uma nova branch para suas contribuições:
+4. Realize suas contribuições e faça commit das mudanças:
+5. Faça push das mudanças para o seu fork:
+6. Crie um pull request no repositório original e aguarde a análise e aprovação.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença
+Este projeto está licenciado sob a licença MIT - consulte o arquivo LICENSE.md para mais detalhes.
