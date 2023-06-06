@@ -15,15 +15,15 @@ const columnsDefinitions: MUIDataTableColumn[] = [
     },
     {
         name: "name",
-        label: "Nome"
+        label: "Name"
     },
     {
         name: "description",
-        label: "Descrição"
+        label: "Description"
     },
     {
         name: "is_active",
-        label: "Ativo?",
+        label: "Active?",
         options: {
             customBodyRender(value, tableMeta, updateValue) {
                 console.log(value, tableMeta, updateValue)
@@ -33,7 +33,7 @@ const columnsDefinitions: MUIDataTableColumn[] = [
     },
     {
         name: "create_at",
-        label: "Criado em",
+        label: "Create at",
         options: {
             customBodyRender(value, tableMeta, updateValue) {
                 return <span>{format(parseISO(value), "dd/MM/yyyy")}</span>
@@ -92,7 +92,7 @@ export const Table = () => {
         <MUIDataTable
             columns={columnsDefinitions}
             data={data}
-            title="Listagem de categorias"/>
+            title="Category List"/>
     );
 };
 
